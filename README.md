@@ -4,8 +4,10 @@
 
 ## Description
 
-<p>Test task from [SpaceCorp](https://spacecorp.online/) company.</p>
-<p>All bonus tasks are completed</p>
+Test task from [SpaceCorp](https://spacecorp.online/) company.
+<p>All bonus tasks are completed.</p>
+
+Postman collections are located in files `movies.postman_collection.json` and `auth.postman_collection.json`.
 
 ## Installation
 
@@ -16,7 +18,7 @@ $ npm install
 PORT = 5000
 CLIENT_URL = http://localhost:3000
 SERVER_URL = http://localhost:5000
-DB_URI = mongodb://[username:password@]host1[:port1][,...hostN[:portN]][/[defaultauthdb][?options]]
+DB_URI = mongodbURL
 JWT_ACCESS_SECRET = jwt secret key
 JWT_REFRESH_SECRET = refresh secret key
 ```
