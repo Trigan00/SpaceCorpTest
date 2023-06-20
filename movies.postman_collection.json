@@ -1,0 +1,291 @@
+{
+	"info": {
+		"_postman_id": "86517d67-9882-4913-be92-28ddd36b1947",
+		"name": "movies",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23671770"
+	},
+	"item": [
+		{
+			"name": "get all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sort",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies/sort/min",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"sort",
+						"min"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies/727e8eb7-629c-48ed-a017-72b4e230760c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"727e8eb7-629c-48ed-a017-72b4e230760c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QzQG1haWwucnUiLCJpZCI6ImVmYTUwNTRmLWRkNjctNDcxZC05YzE3LTBhMDllZDQ2YmU4ZCIsImlhdCI6MTY4NzI1MDExOCwiZXhwIjoxNjg3MjUzNzE4fQ.e-qe7qKLKF0LDJszy8LZ6K5mWdUFbBqRid9zMT-MLmQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "e6Ap3E7YK/logo.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upload image",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QzQG1haWwucnUiLCJpZCI6ImVmYTUwNTRmLWRkNjctNDcxZC05YzE3LTBhMDllZDQ2YmU4ZCIsImlhdCI6MTY4NzI1MzU4MywiZXhwIjoxNjg3MjU3MTgzfQ.-b_0BUF0R6648-jgH3RNAXXy43_NeB2Zh9uLTpluCrg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "g8IH0uMkx/logo.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies/upload-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"upload-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "rate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QzQG1haWwucnUiLCJpZCI6ImVmYTUwNTRmLWRkNjctNDcxZC05YzE3LTBhMDllZDQ2YmU4ZCIsImlhdCI6MTY4NzI0NzYzNiwiZXhwIjoxNjg3MjUxMjM2fQ.zCaCdiwePIFudNLUNE7dmraqZW4pCnToy2o5NK6CllM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userRating\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies/rate/e0e35009-7436-44af-b76b-2a6656540ca7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"rate",
+						"e0e35009-7436-44af-b76b-2a6656540ca7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAbWFpbC5ydSIsImlkIjoiYzAzYzJmMmEtZDgxNC00ZGE3LThjMTMtYWExYWNhMDdhNzFkIiwiaWF0IjoxNjg3MTc5MjA1LCJleHAiOjE2ODcxODI4MDV9.1FNIMTupNmuoVtKgqsZLkpj0URjCElOSIuDSno0nFYY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"two\",\r\n    \"description\": \"TWO\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies/727e8eb7-629c-48ed-a017-72b4e230760c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"727e8eb7-629c-48ed-a017-72b4e230760c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAbWFpbC5ydSIsImlkIjoiYzAzYzJmMmEtZDgxNC00ZGE3LThjMTMtYWExYWNhMDdhNzFkIiwiaWF0IjoxNjg3MTgzNTE1LCJleHAiOjE2ODcxODcxMTV9.62rpqow1Rak_HfqtNJi9GVcd0dyC6iW1bw-VaOjjvQA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"hah\",\r\n    \"description\": \"HAH\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/movies/0651a4f8-9e27-4e50-8a5d-130a2e91af1a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"movies",
+						"0651a4f8-9e27-4e50-8a5d-130a2e91af1a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
